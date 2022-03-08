@@ -7,7 +7,7 @@
 // - - - - - - - - - - - - - - - - - - - - - - -
 // deploy > v.00bond a wizardfly (//wizrdfly.rf.gd/)
 // #wf-202202221918
-// #wf-202202251342
+// #wf-202203081732
 // - - - - - - - - - - - - - - - - - - - - - - -
 */
 // A
@@ -288,7 +288,7 @@ Wapp.FF = Wapp.FF || {};
                 return false;
             }
 
-            console.log('>>>>', data);
+            // console.log('>>>>', data);
 
             // send data
             Wapp.FF.SendData(e, form.method, form.action, data, form, e.target);
@@ -374,8 +374,8 @@ Wapp.FF = Wapp.FF || {};
         // show msg
         Wapp.FF.Message('Mensagem de retorno', 'mensagem manual text', obj, form, status);
 
-        if (obj) {
-            if (JSON.parse(obj).status === true) {
+        // if (obj) {
+            // if (JSON.parse(obj).status === true) {
                 // -----------------------------
                 // GTAG GA
                 // -----------------------------
@@ -393,8 +393,8 @@ Wapp.FF = Wapp.FF || {};
 
                 console.log('dataLayer', win.dataLayer);
                 */
-            }
-        }
+            // }
+        // }
     };
 
     /* Message */
@@ -486,7 +486,7 @@ Wapp.FF = Wapp.FF || {};
 
             // reset style status
             box.classList.remove(styleStatus);
-        }, 2500);
+        }, 4500);
     };
 
     /* show / hide element */
@@ -623,8 +623,8 @@ Wapp.FF = Wapp.FF || {};
     Wapp.FF.SelectOffice = function (e) {
         // console.log(':: SelectOffice [fnc]');
 
-        console.log('e.target', e.target);
-        console.log('e.target.value', e.target.value);
+        // console.log('e.target', e.target);
+        // console.log('e.target.value', e.target.value);
 
         if (doc.querySelectorAll('.boxOthers')[0]) {
             if (e.target.value === 'Outros') {
