@@ -7,7 +7,7 @@
 // - - - - - - - - - - - - - - - - - - - - - - -
 // deploy > v.00bond a wizardfly (//wizrdfly.rf.gd/)
 // #wf-202202221918
-// #wf-202203081732
+// #wf-202203091724
 // - - - - - - - - - - - - - - - - - - - - - - -
 */
 // A
@@ -357,7 +357,7 @@ Wapp.FF = Wapp.FF || {};
         console.log('-------------------');
         console.log('e', e);
         console.log('form', form);
-        console.log('obj', obj);
+        // console.log('obj', obj);
         console.log('button', button);
         console.log('status', status);
         console.log('data', data);
@@ -373,6 +373,27 @@ Wapp.FF = Wapp.FF || {};
 
         // show msg
         Wapp.FF.Message('Mensagem de retorno', 'mensagem manual text', obj, form, status);
+
+        // ---------------------------------------------
+        // ENABLED download file PDF for FORM formNotice
+        // ---------------------------------------------
+        // console.log('form PDF?', form);
+
+        if (form.id === 'formNotice') {
+            // console.log('ENABLED PDF FILE');
+
+            var
+                dataUri = 'pdf/Edital-Maratona-Tech.pdf',
+                exportFileDefaultName = 'Edital-Maratona-Tech.pdf',
+                linkElement = doc.createElement('a');
+
+            // console.log('linkElement', linkElement);
+
+            linkElement.setAttribute('href', dataUri);
+            linkElement.setAttribute('download', exportFileDefaultName);
+            linkElement.click();
+        }
+        // ---------------------------------------------
 
         // if (obj) {
             // if (JSON.parse(obj).status === true) {
@@ -404,7 +425,7 @@ Wapp.FF = Wapp.FF || {};
         console.log('-------------------');
         console.log('title', title);
         console.log('message', message);
-        console.log('obj', obj);
+        // console.log('obj', obj);
         console.log('form', form);
         console.log('status', status);
         console.log('-------------------');
