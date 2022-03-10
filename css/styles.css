@@ -8,7 +8,7 @@
 // deploy > v.00bond a wizardfly
 // wizrdfly.rf.gd
 // #wf-202202221918
-// #wf-202202251809
+// #wf-202203101237
 // - - - - - - - - - - - - - - - - - - - - - - -
 */
 /* -- fonts -- */
@@ -16,10 +16,8 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
-
 @media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
-    /* -- reset -- */
-    html, body, div, section, ul, li, a, p, strong, em, h1, h2, h3, nav, img, header, footer, form, fieldset, label, input, i, figure, iframe, select {
+    /* -- reset -- */ html, body, div, section, ul, li, a, p, strong, em, h1, h2, h3, nav, img, header, footer, form, fieldset, label, input, i, figure, iframe, select {
         border: 0;
         padding: 0;
         margin: 0;
@@ -473,7 +471,7 @@ font-family: 'Roboto', sans-serif;
     /* -- video -- */
     .section.video {
         background: url('../img/bg-video.jpg') no-repeat top center / cover #363636;
-        padding:135px 0 110px;
+        padding: 135px 0 110px;
     }
 
     .section.video .grid {
@@ -487,6 +485,14 @@ font-family: 'Roboto', sans-serif;
 
     .section.video .left iframe {
         width: 100%;
+    }
+
+    .section.video .left img {
+        width: 100%;
+        max-width: 561px;
+        margin: 0 auto;
+        display: block;
+        box-shadow: -6px 6px 20px rgb(0 0 0 / 40%);
     }
 
     .section.video .right {
