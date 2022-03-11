@@ -8,7 +8,7 @@
 // deploy > v.00bond a wizardfly
 // wizrdfly.rf.gd
 // #wf-202202221918
-// #wf-202203101237
+// #wf-202203111135
 // - - - - - - - - - - - - - - - - - - - - - - -
 */
 /* -- fonts -- */
@@ -180,6 +180,12 @@ font-family: 'Roboto', sans-serif;
         background-repeat: no-repeat;
     }
 
+    .spr2 {
+        display: inline-block;
+        background-image: url('../img/spr-gen-02.png');
+        background-repeat: no-repeat;
+    }
+
     .spr.icoArrowDownQuery {
         width: 28px;
         height: 28px;
@@ -274,6 +280,12 @@ font-family: 'Roboto', sans-serif;
         width: 65px;
         height: 63px;
         background-position: -2px -266px;
+    }
+
+    .spr2.icoBrand08Up {
+        width: 68px;
+        height: 63px;
+        background-position: 0 0;
     }
 
     .spr.icoBrand09 {
