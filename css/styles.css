@@ -1340,8 +1340,9 @@ font-family: 'Roboto', sans-serif;
 
     /* -- footer bar -- */
     .section.footerBar {
-        background: #fcb63d;
+        background: #004acd;
         padding: 15px 0;
+        border-top: 1px solid rgb(255 255 255 / 10%);
     }
 
     .section.footerBar .grid {
