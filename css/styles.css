@@ -8,7 +8,7 @@
 // deploy > v.00bond a wizardfly
 // wizrdfly.rf.gd
 // #wf-202202221918
-// #wf-202203141425
+// #wf-202203151604
 // - - - - - - - - - - - - - - - - - - - - - - -
 */
 /* -- fonts -- */
@@ -1038,7 +1038,7 @@ font-family: 'Roboto', sans-serif;
     }
 
     .section.testimony .sldTestimony .item p em {
-        height: 125px;
+        height: 160px;
         display: block;
         font-style: normal;
     }
@@ -1336,6 +1336,32 @@ font-family: 'Roboto', sans-serif;
         text-transform: uppercase;
         font-weight: 800;
         font-family: 'Montserrat', sans-serif;
+    }
+
+    /* -- footer bar -- */
+    .section.footerBar {
+        background: #fcb63d;
+        padding: 15px 0;
+    }
+
+    .section.footerBar .grid {
+    }
+
+    .section.footerBar p {
+        text-align: center;
+        display: block;
+        font-size: 15px;
+        color: #FFFFFF;
+        line-height: 15px;
+    }
+
+    .section.footerBar p a {
+        color: #FFFFFF;
+        font-weight: 700;
+    }
+
+    .section.footerBar p a:hover, .section.footerBar p a:focus {
+        text-decoration: underline;
     }
 }
 
