@@ -7,7 +7,7 @@
 // - - - - - - - - - - - - - - - - - - - - - - -
 // deploy > v.00bond a wizardfly (//wizrdfly.rf.gd/)
 // #wf-202202221918
-// #wf-202203091724
+// #wf-202203251234
 // - - - - - - - - - - - - - - - - - - - - - - -
 */
 // A
@@ -397,23 +397,25 @@ Wapp.FF = Wapp.FF || {};
 
         // if (obj) {
             // if (JSON.parse(obj).status === true) {
-                // -----------------------------
-                // GTAG GA
-                // -----------------------------
-                /*
-                win.dataLayer = win.dataLayer || [];
-                function gtag(){win.dataLayer.push(arguments);}
-                // gtag('js', new Date());
-                // gtag('config', 'GTM-5JQ67H');
 
-                gtag('event', 'submit', {
-                    'event_category': 'form',
-                    'event_label': 'Mulher Empreendedora',
-                    'value': 'lp'
-                });
+                if (status === 'SUCCESS') {
+                    // -----------------------------
+                    // GTAG GA
+                    // -----------------------------
+                    win.dataLayer = win.dataLayer || [];
+                    function gtag(){win.dataLayer.push(arguments);}
+                    // gtag('js', new Date());
+                    // gtag('config', 'GTM-5JQ67H');
 
-                console.log('dataLayer', win.dataLayer);
-                */
+                    gtag('event', 'form.submit', {
+                        'event_category': 'Formulário ' + form.id,
+                        'event_label': 'E-mail do formulário',
+                        'event_action': 'Envio de formulário'
+                        // 'value': 'lp'
+                    });
+
+                    console.log('dataLayer', win.dataLayer);
+                }
             // }
         // }
     };
