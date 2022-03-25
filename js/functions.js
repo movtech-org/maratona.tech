@@ -41,6 +41,8 @@ Wapp.FF = Wapp.FF || {};
 
         // :: select office ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
         slcOffice           : doc.querySelectorAll('[name="office"]'),
+
+        userEmail : '',
     };
 
     /* init all functions */
@@ -208,6 +210,8 @@ Wapp.FF = Wapp.FF || {};
 
 	                            } else {
 	                                el.classList.remove('error');
+
+                                    Vars.userEmail = el.value;
 	                            }
 
 	                        // PHONE
@@ -410,7 +414,8 @@ Wapp.FF = Wapp.FF || {};
                     gtag('event', 'form.submit', {
                         'event_category': 'Formulário ' + form.id,
                         'event_label': 'E-mail do formulário',
-                        'event_action': 'Envio de formulário'
+                        'event_action': 'Envio de formulário',
+                        'event_email': Vars.userEmail
                         // 'value': 'lp'
                     });
 
