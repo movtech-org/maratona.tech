@@ -359,7 +359,7 @@ Wapp.FF = Wapp.FF || {};
         console.log('form', form);
         // console.log('obj', obj);
         console.log('button', button);
-        console.log('status', status);
+        console.log('>>> status', status);
         console.log('data', data);
         console.log('-------------------');
 
@@ -398,7 +398,7 @@ Wapp.FF = Wapp.FF || {};
         // if (obj) {
             // if (JSON.parse(obj).status === true) {
 
-                if (status === 'SUCCESS') {
+                // if (status === 'SUCCESS') {
                     // -----------------------------
                     // GTAG GA
                     // -----------------------------
@@ -415,7 +415,7 @@ Wapp.FF = Wapp.FF || {};
                     });
 
                     console.log('dataLayer', win.dataLayer);
-                }
+                // }
             // }
         // }
     };
