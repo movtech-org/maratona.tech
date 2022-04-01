@@ -1121,7 +1121,7 @@ font-family: 'Roboto', sans-serif;
     }
 
     .section.sponsors ul li a {
-        display: block;
+        display: inline-block;
         vertical-align: middle;
         border: 1px solid #ffffff;
         border-radius: 3px;
