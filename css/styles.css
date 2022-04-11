@@ -101,6 +101,38 @@ font-family: 'Roboto', sans-serif;
         font-family: 'Montserrat', sans-serif;
     }
 
+    /* -- whatsapp -- */
+    .section.whatsapp {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 29;
+        /* height: 100vh; */
+        width: auto;
+        /* text-align: center; */
+        /* transition: left .4s, background 0.4s; */
+    }
+
+    .section.whatsapp .grid {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .section.whatsapp a {
+        display: block;
+        margin: 20px;
+        transition: opacity 0.4s;
+    }
+
+    .section.whatsapp a:hover, .section.whatsapp a:focus {
+        opacity: 0.8;
+    }
+
+    .section.whatsapp a img {
+        display: block;
+    }
+
     /* -- message -- */
     .section.message {
         position: fixed;
