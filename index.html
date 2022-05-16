@@ -8,7 +8,7 @@
 // deploy > v.00bond a wizardfly
 // wizrdfly.rf.gd
 // #wf-202202221918
-// #wf-202204151646
+// #wf-202205161138
 // - - - - - - - - - - - - - - - - - - - - - - -
 -->
 <!DOCTYPE html>
@@ -285,12 +285,14 @@
 			</div>
 			<div class="right">
 				<h2 class="title">
-					Faça já sua inscrição
+					<!-- Faça já sua inscrição -->
+					Inscrições encerradas
 				</h2>
 				<p>
-					Preencha o formulário abaixo para inscrever a sua escola. Após o preenchimento, a comunicação será realizada via e-mail.
+					<!-- Preencha o formulário abaixo para inscrever a sua escola. Após o preenchimento, a comunicação será realizada via e-mail. -->
+					Inscrições encerradas
 				</p>
-				<form action="" method="POST" id="formInscription">
+				<form action="" method="POST" id="formInscription" style="pointer-events:none !important;">
 					<fieldset>
 						<input type="hidden" name="form" value="formInscription" required="required"/>
 						<label class="box40">
@@ -346,7 +348,8 @@
 							</em>
 						</label>
 						<label class="box100 none pNone">
-							<input type="submit" class="btn btnSend" title="Inscreva-se" value="Inscreva-se" data-form="formInscription"/>
+							<!-- <input type="submit" class="btn btnSend" title="Inscreva-se" value="Inscreva-se" data-form="formInscription"/> -->
+							<input type="submit" class="btn" title="Inscrições encerradas" value="Inscrições encerradas" data-form="formInscription" style="pointer-events:none !important;"/>
 						</label>
 						<label class="box100 none">
 							<p>
